@@ -187,5 +187,10 @@ body {
   margin-top: 50px;
   padding: 10px 60px;
  }
+
+ .container .wrapper {
+  max-width: 400px;
+  height: 80%;
+}
   
 }

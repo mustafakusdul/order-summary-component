@@ -1,0 +1,183 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* variables */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --red-hat-display-font: 'Red Hat Display', sans-serif;
+}
+
+/* body */
+body {
+  background-color: var(--pale-blue);
+  font-family: var(--desaturated-blue)
+}
+
+/* .container */
+.container {
+  background: url("./images/pattern-background-desktop.svg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 15px 15px;
+}
+
+/* .pattern-image  */
+.pattern-image {
+  width: 100vw;
+  position: absolute;
+  top: -140px;
+  left: 0;
+  z-index: -1;
+}
+
+/* .wrapper */
+.container .wrapper {
+  max-width: 400px;
+  height: 70%;
+  border-radius: 0 0 15px 15px;
+}
+
+/* .top-side */
+
+
+/* top-img */
+.top-img {
+  border-radius: 15px 15px 0 0;
+}
+
+/* .bottom-side */
+.wrapper .bottom-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  height: 70%;
+  border-radius: 0 0 15px 15px;
+}
+
+/* .info  */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .info p  */
+.info p {
+  text-align: center;
+  font-size: 20px;
+  color: var(--desaturated-blue);
+}
+
+/* price */
+
+/* price-icon */
+.price-icon {
+  padding-left: 0;
+}
+
+.price-icon img {
+  width: 40px;
+}
+
+/* .icones */
+.icones {
+  margin-left: 20px;
+}
+
+
+/* .price-main */
+.price-main{
+  margin: 20px 60px;
+  
+}
+
+/* plan and amount */
+.plan, .amount {
+  margin-left:-40px;
+  margin-right: 40px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.amount {
+  color: var(--desaturated-blue);
+  
+}
+
+/* .price-change */
+.price-change {
+  margin-right: 20px;
+}
+
+.price-change a:hover{
+  text-decoration: none;
+  color: var(--dark-blue)
+}
+/* .button */
+.bttn {
+  background-color: var(--bright-blue);
+  margin-top: 50px;
+  padding: 15px 100px;
+  color: var(--pale-blue);
+  text-decoration: none;
+  font-weight: 600;;
+}
+
+.bttn:hover {
+  color: #fff;
+  background-color: var(--desaturated-blue)
+}
+
+/* .cancel */
+.cancel {
+  margin-top: 20px;
+  font-weight: 700;
+  color: var(--very-pale-blue)
+}
+
+.cancel a {
+  text-decoration: none;
+}
+
+.cancel:hover {
+  color: var(--desaturated-blue)
+} 
+
+/* .attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* media queries */
+
+@media (max-height:840px) {
+  .container .wrapper {
+    max-width: 400px;
+    height: 100%;
+  }
+}

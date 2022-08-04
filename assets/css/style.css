@@ -181,3 +181,11 @@ body {
     height: 100%;
   }
 }
+
+@media (max-width: 601px) {
+ .bttn {
+  margin-top: 50px;
+  padding: 10px 60px;
+ }
+  
+}
